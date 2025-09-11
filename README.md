@@ -36,6 +36,7 @@ Clone the Repository:
 
 git clone https://github.com/chiostro/sendmail_backup_monitoring_termux.git
 cd sendmail_backup_monitoring_termux
+
  
 Make Scripts Executable: Set the appropriate permissions to execute the scripts:
 
