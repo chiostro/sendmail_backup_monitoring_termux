@@ -130,7 +130,8 @@ This command will create a backup of the Download folder and store it as YYMMDD_
     tar -xzf YYMMDD_HHMM_backup.tar.gz name_file # to unzip a scpecific file 
     
 
-If you then have to send confidential tar.gz as attachment or save on a drive, I recommend to obfuscate using: gpg -c YYMMDD_HHMM_backup.tar.gz
+If you then have to send confidential tar.gz as attachment or save on a drive, I recommend to obfuscate it using: 
+      gpg -c YYMMDD_HHMM_backup.tar.gz
 ## Monitor Your Smartphone’s Resources
 The  scripts provide real-time monitoring of the following:
 
