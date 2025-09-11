@@ -109,9 +109,9 @@ The backup script allows you to back up any folder by specifying the folder path
 
 Example:
 
-    ```bash
+    
     sh backup.sh /storage/emulated/0/Download
-    ```
+    
 
 This command will create a backup of the Download folder and store it as YYMMDD_HHMM_backup.tar.gz in the current directory.
 
@@ -126,9 +126,9 @@ Storage Usage: Displays available and used space on internal storage and SD card
 
 Example:
 
- ```bash
+ 
     sh chk_cpu.sh
-    ```
+    
 
 Contributions
 Feel free to fork the repository and submit your contributions or suggestions. If you find any issues or bugs, please open an issue.
