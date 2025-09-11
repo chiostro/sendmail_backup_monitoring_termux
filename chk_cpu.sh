@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# Author Andrea Noto
+# Lì mo  11 Sep 2026
 # Funzione per ottenere l'uso della CPU
 get_cpu_usage() {
     # Mostra l'uso della CPU con top
