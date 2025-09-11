@@ -108,6 +108,7 @@ echo "set sendmail=\"/usr/bin/msmtp\"">~/.muttrc
 Now that msmtp is set up, you can send emails with attachments from the command line. For example:
 
 echo -e "Subject: Test Email\n\nHello from Termux!" | msmtp recipient-email@example.com
+       
 To send an email with an attachment:
 
 You can use the provided script test_email_attached.sh to send emails automatically with attachment PDF.:
