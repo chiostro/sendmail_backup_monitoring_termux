@@ -94,6 +94,10 @@ Save the file and set the appropriate permissions:
    
    chmod 600 ~/.msmtprc
    
+If ~/.muttrc  empty run:
+
+echo "set sendmail=\"/usr/bin/msmtp\"">~/.muttrc
+
 
 Sending Emails with msmtp
 Now that msmtp is set up, you can send emails with attachments from the command line. For example:
