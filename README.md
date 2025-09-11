@@ -151,4 +151,4 @@ This project is licensed under the MIT License.
 - **Two-Factor Authentication Setup for Gmail**: Instructions on how to enable 2FA and create an app-specific password.
 - **msmtp Configuration**: How to configure msmtp with Gmail for sending emails with attachments.
 - **Backup Script**: How to use the backup script to back up specific folders.
-- **System Monitoring Scripts**: Descriptions of how to monitor CPU, memory, and storage with your scripts.
+- **System Monitoring Scripts**: Descriptions of how to monitor CPU, memory, and storage with downloaded scripts.
