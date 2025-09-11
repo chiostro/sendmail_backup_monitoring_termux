@@ -125,8 +125,8 @@ Example:
 This command will create a backup of the Download folder and store it as YYMMDD_HHMM_backup.tar.gz in the current directory.
 
    
-    tar -tzf YYMMDD_HHMM_backup.tar.gz # To read what you saved in
-    tar -xzf YYMMDD_HHMM_backup.tar.gz # to unzip all
+    tar -tzf YYMMDD_HHMM_backup.tar.gz           # To read what you saved inside
+    tar -xzf YYMMDD_HHMM_backup.tar.gz           # to unzip all
     tar -xzf YYMMDD_HHMM_backup.tar.gz name_file # to unzip a scpecific file 
     
 
