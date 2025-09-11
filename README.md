@@ -31,7 +31,7 @@ This project contains a collection of **bash shell scripts** for automating vari
 
    ```bash
    pkg update
-   pkg install msmtp  git
+   pkg install msmtp mutt git
 Clone the Repository:
 
 git clone https://github.com/chiostro/sendmail_backup_monitoring_termux.git
@@ -71,7 +71,7 @@ My setup.sh will help you, parameters are 2 : your email account (create new one
 sh setup.sh your-email@gmail.com xxxx xxxx xxxx xxxx
 cat ~/.msmtprc
 #nano ~/.msmtprc
-Add the following configuration:
+Add the following configuration, if you do not read after cat command:
 
 account default
 host smtp.gmail.com
