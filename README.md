@@ -75,6 +75,9 @@ My setup.sh will help you, parameters are 2 : your email account (create new one
 
 Add the following configuration into ~/.msmtprc, if you do not read anything after cat command:
 
+
+
+   ```bash
 account default
 host smtp.gmail.com
 port 587
@@ -85,6 +88,8 @@ tls on
 tls_starttls on
 auth on
 logfile ~/.msmtp.log
+   ```
+
 
 Replace your-email@gmail.com with your Gmail address.
 
