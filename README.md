@@ -13,12 +13,12 @@ This project contains a collection of **bash shell scripts** for automating vari
 - Supports multiple email providers.
 - Easy to integrate into any automation process.
 
-### 2. 💾 **Backup Folders**
+### 2.  **Backup Folders**
 - Create a backup of any specified folder by passing it as a parameter to the script.
 - Automatically compresses the folder into a `.tar.gz` file.
 - Supports custom folder paths and destinations is where un run the scripts.
 
-### 3. 🧠 **Monitor Smartphone Resources**
+### 3.  **Monitor Smartphone Resources**
 - **Memory Usage**: Provides details on used, free, and cached memory.
 - **Storage Status**: Shows free and used space for internal storage (and SD card in the next release).
 - **CPU Usage**: Displays CPU load, temperature (if available), and basic system stats.
