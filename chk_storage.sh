@@ -1,4 +1,7 @@
 #!/bin/bash
+# Author Andrea Noto
+# Lì mo  11 Sep 2026
+# % Storage used
 test -f ~/.msmtprc && receiver=` awk '$1=="from" { print $2}' ~/.msmtprc `
 # Soglie di utilizzo (modifica in base alle tue preferenze)
 STORAGE_THRESHOLD=80    # Soglia di utilizzo dello storage (%)
