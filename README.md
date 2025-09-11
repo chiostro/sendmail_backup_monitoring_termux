@@ -34,13 +34,11 @@ This project contains a collection of **bash shell scripts** for automating vari
    pkg install msmtp mutt git
 Clone the Repository:
 
-git clone https://github.com/chiostro/sendmail_backup_monitoring_termux.git
-cd sendmail_backup_monitoring_termux
+   ```bash
+   git clone https://github.com/chiostro/sendmail_backup_monitoring_termux.git
+   cd sendmail_backup_monitoring_termux
+   ```
 
- 
-Make Scripts Executable: Set the appropriate permissions to execute the scripts:
-
-chmod +x *.sh
 How to Send an Email with msmtp
 Before using the email functionality, you'll need to configure msmtp with your email provider’s settings. For Gmail, you'll need to generate an App Password if you have 2FA enabled.
 
@@ -69,10 +67,13 @@ Configure msmtp with Gmail
 Create or edit the msmtp configuration file in your Termux home directory (~/.msmtprc):
 My setup.sh will help you, parameters are 2 : your email account (create new one to test) and your special password  generated for 2FA by gmail
 
-sh setup.sh your-email@gmail.com xxxx xxxx xxxx xxxx
-cat ~/.msmtprc
-#nano ~/.msmtprc
-Add the following configuration, if you do not read after cat command:
+   ```bash
+   sh setup.sh your-email@gmail.com xxxx xxxx xxxx xxxx
+   cat ~/.msmtprc
+   #nano ~/.msmtprc
+   ```
+
+Add the following configuration into ~/.msmtprc, if you do not read anything after cat command:
 
 account default
 host smtp.gmail.com
@@ -90,7 +91,11 @@ Replace 'your-app-password' with the 16-character App Password you generated.
 
 Save the file and set the appropriate permissions:
 
-chmod 600 ~/.msmtprc
+    ```bash
+   chmod 600 ~/.msmtprc
+   
+   ```
+
 Sending Emails with msmtp
 Now that msmtp is set up, you can send emails with attachments from the command line. For example:
 
@@ -98,14 +103,17 @@ echo -e "Subject: Test Email\n\nHello from Termux!" | msmtp recipient-email@exam
 To send an email with an attachment:
 
 
-You can use the provided script test_email_attached.sh to send emails automatically with attachments.:
-
+You can use the provided script test_email_attached.sh to send emails automatically with attachment PDF.:
 
 How to Use the Backup Script
 The backup script allows you to back up any folder by specifying the folder path as an argument. The backup will be compressed into a .tar.gz file.
 
 Example:
-./backup.sh /storage/emulated/0/Download
+
+    ```bash
+    sh backup.sh /storage/emulated/0/Download
+    ```
+
 This command will create a backup of the Download folder and store it as YYMMDD_HHMM_backup.tar.gz in the current directory.
 
 Monitor Your Smartphone’s Resources
@@ -118,7 +126,11 @@ Memory Usage: Shows details about free and used memory.
 Storage Usage: Displays available and used space on internal storage and SD card.
 
 Example:
-./chk_cpu.sh
+
+ ```bash
+    sh chk_cpu.sh
+    ```
+
 Contributions
 Feel free to fork the repository and submit your contributions or suggestions. If you find any issues or bugs, please open an issue.
 
