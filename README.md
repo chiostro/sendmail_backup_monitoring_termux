@@ -113,7 +113,7 @@ To send an email with an attachment:
 
 You can use the provided script test_email_attached.sh to send emails automatically with attachment PDF.:
 
-How to Use the Backup Script
+## How to Use the Backup Script
 The backup script allows you to back up any folder by specifying the folder path as an argument. The backup will be compressed into a .tar.gz file.
 
 Example:
@@ -124,7 +124,7 @@ Example:
 
 This command will create a backup of the Download folder and store it as YYMMDD_HHMM_backup.tar.gz in the current directory.
 
-Monitor Your Smartphone’s Resources
+## Monitor Your Smartphone’s Resources
 The  scripts provide real-time monitoring of the following:
 
 CPU Usage: Displays the current CPU load and temperature (if available).
