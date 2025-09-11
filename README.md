@@ -32,14 +32,14 @@ This project contains a collection of **bash shell scripts** for automating vari
    ```bash
    pkg update
    pkg install msmtp mutt git
-Clone the Repository:
+## Clone the Repository:
 
    ```bash
    git clone https://github.com/chiostro/sendmail_backup_monitoring_termux.git
    cd sendmail_backup_monitoring_termux
    ```
 
-How to Send an Email with msmtp
+## How to Send an Email with msmtp
 Before using the email functionality, you'll need to configure msmtp with your email provider’s settings. For Gmail, you'll need to generate an App Password if you have 2FA enabled.
 
 Gmail 2FA Setup and App Password Generation
@@ -63,7 +63,7 @@ Choose Mail and Other (Custom name), and name it something like Termux.
 
 Google will generate a 16-character password. This is the App Password you’ll use for msmtp.
 
-Configure msmtp with Gmail
+## Configure msmtp with Gmail
 Create or edit the msmtp configuration file in your Termux home directory (~/.msmtprc):
 My setup.sh will help you, parameters are 2 : your email account (create new one to test) and your special password  generated for 2FA by gmail
 
@@ -104,7 +104,7 @@ If ~/.muttrc  empty run:
 echo "set sendmail=\"/usr/bin/msmtp\"">~/.muttrc
 
 
-Sending Emails with msmtp
+## Sending Emails with msmtp
 Now that msmtp is set up, you can send emails with attachments from the command line. For example:
 
 echo -e "Subject: Test Email\n\nHello from Termux!" | msmtp recipient-email@example.com
