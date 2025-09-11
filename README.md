@@ -85,15 +85,14 @@ tls on
 tls_starttls on
 auth on
 logfile ~/.msmtp.log
+
 Replace your-email@gmail.com with your Gmail address.
 
 Replace 'your-app-password' with the 16-character App Password you generated.
 
 Save the file and set the appropriate permissions:
-
     ```bash
    chmod 600 ~/.msmtprc
-   
    ```
 
 Sending Emails with msmtp
