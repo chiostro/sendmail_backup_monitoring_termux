@@ -1,3 +1,6 @@
+#!/bin/bash
+# Author Andrea Noto
+# Lì mo  11 Sep 2026
 #Nota importante: Se hai l'autenticazione 
 #a 2 fattori abilitata su Gmail, 
 #dovrai creare una password per le app 
@@ -5,8 +8,6 @@
 #Puoi generare una password per 
 #le app nelle impostazioni del tuo 
 #account Google.
-
-
 
 test -z $1 && echo "Write your email please.\nyouraccount@gmail.com"&& exit 1
 test -z $2 && echo "Write your password please.\nxxxx xxxx xxxx xxxx "&& exit 1
