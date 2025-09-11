@@ -91,9 +91,9 @@ Replace your-email@gmail.com with your Gmail address.
 Replace 'your-app-password' with the 16-character App Password you generated.
 
 Save the file and set the appropriate permissions:
-    ```bash
+   
    chmod 600 ~/.msmtprc
-   ```
+   
 
 Sending Emails with msmtp
 Now that msmtp is set up, you can send emails with attachments from the command line. For example:
