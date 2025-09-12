@@ -3,8 +3,8 @@
 This project contains a collection of **bash shell scripts** for automating various tasks on your Android device via **Termux**. The scripts provide functionalities for:
 
 - Sending emails with attachments from the command line.
-- Performing automated backups of specific folders.
-- Monitoring smartphone resources, such as **memory**, **storage**, and **CPU** usage.
+- Performing automated backups of specific folders, if you digest cronttab command.
+- Monitoring smartphone resources, such as **memory** , **storage**, and **CPU** usage.
 
 ## Features
 
@@ -19,9 +19,9 @@ This project contains a collection of **bash shell scripts** for automating vari
 - Supports custom folder paths and destinations is where un run the scripts.
 
 ### 3.  **Monitor Smartphone Resources**
-- **Memory Usage**: Provides details on used, free, and cached memory.
-- **Storage Status**: Shows free and used space for internal storage (and SD card in the next release).
-- **CPU Usage**: Displays CPU load, temperature (if available), and basic system stats.
+- **Memory Usage**: Provides details on used, free, and cached memory , using "free" command.
+- **Storage Status**: Shows free and used space for internal storage (and SD card in the next release), try df |grep sd.
+- **CPU Usage**: Displays CPU load, temperature (if available), and basic system stats, using top command.
 
 ## Setup and Installation
 
@@ -137,9 +137,9 @@ The  scripts provide real-time monitoring of the following:
 
 CPU Usage: Displays the current CPU load and temperature (if available).
 
-Memory Usage: Shows details about free and used memory.
+Memory Usage: Shows alert if the percentage of occupied memory exceeds the threshold of 80.
 
-Storage Usage: Displays available and used space on internal storage and SD card.
+Storage Usage: Shows alert if the percentage of occupied storage exceeds the threshold of 80.
 
 Example:
 
@@ -151,7 +151,7 @@ Example:
 Feel free to fork the repository and submit your contributions or suggestions. If you find any issues or bugs, please open an issue.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE file](LICENSE) for details.
 
 
 ### Key Highlights:
