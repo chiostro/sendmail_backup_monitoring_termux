@@ -151,7 +151,7 @@ Example:
 Feel free to fork the repository and submit your contributions or suggestions. If you find any issues or bugs, please open an issue.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE file](LICENSE) for details.
 
 
 ### Key Highlights:
