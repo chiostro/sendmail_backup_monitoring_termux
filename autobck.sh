@@ -12,5 +12,6 @@ ls -rt *.gz |tail -1 > list.txt
 bckupname=`cat list.txt`
 tar -tzf $bckupname >> list.txt
 sh ../obfuscate-file-gpg/obfuscate.sh $bckupname  $pass
-cat list.txt | mutt -s "$bckname password is crypted in $Pass" -a list.txt -- $receiver
-mv $bckupname.gpg  ~/.
+cat list.txt | mutt -s "$bckname.gpg password is crypted in $Pass" -a list.txt -- $receiver
+echo "move $bckupname.gpg  under /storage/emulated/0"
+mv $bckupname.gpg  /storage/emulated/0
