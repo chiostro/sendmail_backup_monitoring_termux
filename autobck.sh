@@ -15,8 +15,8 @@ tar -tzf $bckupname >> list.txt
 sh ../obfuscate-file-gpg/obfuscate.sh $bckupname  $pass
 cat list.txt | mutt -s "$bckname.gpg password is crypted in $Pass" -a list.txt -- $receiver
 RCLONED=`rclone listremotes|tail -1`
-echo "Upload $bckupname.gpg into $RCLONED"
-test -z $RCLONED || rclone copy  $bckupname.gpg $RCLONED
+#echo "Upload $bckupname.gpg into $RCLONED"
+#test -z $RCLONED || rclone copy  $bckupname.gpg $RCLONED
 echo "Move $bckupname.gpg  under /storage/emulated/0"
 mv $bckupname.gpg  /storage/emulated/0
 sleep 5
