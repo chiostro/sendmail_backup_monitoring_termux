@@ -3,7 +3,7 @@
 receiver=` awk '$1=="from" { print $2}' ~/.msmtprc `
 ./backup.sh
 Pass=`ls -rt ../password-manager-bash/password_store.*.gpg 2>/dev/null|tail -1`
-echo "Type passphrase for $Pass and automatic password inside will be used to crypt backup"
+echo "Type passphrase for $Pass and automatically password inside will be used to crypt backup"
 if [ -f "$Pass" ];then
    pass=`gpg --quiet --pinentry-mode loopback --decrypt $Pass `
 else
