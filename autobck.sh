@@ -1,3 +1,4 @@
+# Author Andrea Noto
 # Prerequsite  obfuscate-file-gpf cloned
 # Prerequsite  Passwod Managr cloned 
 receiver=` awk '$1=="from" { print $2}' ~/.msmtprc `
