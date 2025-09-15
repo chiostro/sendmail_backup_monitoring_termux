@@ -4,7 +4,7 @@
 # Funzione per ottenere l'uso della CPU
 get_cpu_usage() {
     # Mostra l'uso della CPU con top
-    top -n 1 | grep "CPU" | awk '{print "CPU Usage: " $2 $3 $4 $5}'
+    top -bn1 | grep "%Cpu" | awk '{print "CPU Usage: " $2 "% user, " $4 "% system"}'
 }
 
 # Funzione per ottenere informazioni sulla CPU
